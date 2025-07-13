@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat container */
+.chat-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Modern Chat Area */
+.chat-area-modern {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #f4f7fa;
+}
+
+/* Modern Messages Container */
+.messages-modern {
+  flex: 1;
+  padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  overflow-y: auto;
+  background: #f4f7fa;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* Modern Message Bubbles */
+.message-bubble-modern {
+  max-width: 75%;
+  padding: 0.85rem 1.2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  word-break: break-word;
+  font-size: 1rem;
+  position: relative;
+  transition: background 0.2s;
+}
+.message-bubble-modern.sent {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  margin-left: auto;
+  border-bottom-right-radius: 0.3rem;
+}
+.message-bubble-modern.received {
+  background: #fff;
+  color: #222;
+  margin-right: auto;
+  border-bottom-left-radius: 0.3rem;
+  border: 1px solid #e3e7ed;
+}
+
+/* Avatars */
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.avatar-sm {
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+}
+
+/* Modern Message Input */
+.message-input-modern {
+  border-top: 1px solid #e3e7ed;
+  background: #f8fafc;
+  padding: 1rem 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+    padding: 0.5rem;
+  }
+  .chat-area-modern {
+    padding: 0;
+  }
+  .messages-modern {
+    padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+  }
+  .message-bubble-modern {
+    font-size: 0.97rem;
+    padding: 0.7rem 0.8rem;
+    max-width: 90%;
+  }
+  .avatar, .avatar-sm {
+    width: 26px;
+    height: 26px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Form styling */
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+  
+  .message {
+    max-width: 85%;
+  }
+}
+
+/* Loading spinner */
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #007bff;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
