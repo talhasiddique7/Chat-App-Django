@@ -10,6 +10,12 @@ A real-time chat application built with Django (backend) and React (frontend) us
 - Online user list
 - Responsive design
 
+## UI Pictures
+
+![UI](./UI%20Pictures/1.png)
+![UI](./UI%20Pictures/2.png)
+![UI](./UI%20Pictures/3.png)
+
 ## Prerequisites
 
 - Python 3.8+
