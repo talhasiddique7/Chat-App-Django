@@ -20,10 +20,23 @@ A real-time chat application built with Django (backend) and React (frontend) us
 
 - Python 3.8+
 - Node.js 16+
-- npm or yarn
-- SQLite (included with Python)
+- Docker and Docker Compose
 
-## Backend Setup
+## Project Setup
+
+### Docker Setup (Recommended)
+
+1.  Make sure you have Docker and Docker Compose installed.
+2.  Clone the repository.
+3.  From the root of the project, run the following command to build and start the containers:
+    ```bash
+    docker-compose up --build
+    ```
+4.  The frontend will be available at `http://localhost:3000` and the backend at `http://localhost:8000`.
+
+### Local Development Setup
+
+#### Backend Setup
 
 1. Navigate to the backend directory:
    ```bash
@@ -63,7 +76,7 @@ A real-time chat application built with Django (backend) and React (frontend) us
 
    The backend will be available at `http://localhost:8000`
 
-## Frontend Setup
+#### Frontend Setup
 
 1. In a new terminal, navigate to the frontend directory:
    ```bash
