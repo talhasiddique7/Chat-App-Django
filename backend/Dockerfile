@@ -18,9 +18,9 @@ COPY . /app/
 # Expose the port the app runs on
 EXPOSE 8000
 
-# Copy entrypoint script
-COPY entrypoint.sh .
-RUN chmod +x ./entrypoint.sh
+# Copy entrypoint script and make it executable
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
 
 # Run the application
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]
