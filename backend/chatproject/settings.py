@@ -138,13 +138,13 @@ CORS_ALLOW_ALL_ORIGINS = True  # For development only
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "http://65.2.37.155:3000",
 ]
 
 # WebSocket CORS settings
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:3000$",
-    r"^http://127.0.0.1:3000$",
+    r"^http://65.2.37.155:3000$",
 ]
 
 # Additional CORS headers for WebSocket
