@@ -169,6 +169,13 @@ CHANNEL_LAYERS = {
     },
 }
 
+# WebSocket allowed origins
+ALLOWED_WEBSOCKET_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000", 
+    "http://65.2.37.155:3000",
+]
+
 # REST Framework
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [

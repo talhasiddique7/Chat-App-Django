@@ -54,9 +54,9 @@ function ChatRoom() {
 
     // Set up WebSocket connection
     const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-    const host = window.location.hostname;
-    // Connect to backend port 8000 for WebSocket (not through proxy)
-    const wsUrl = `${protocol}//${host}:8000/ws/chat/${roomName}/`;
+    const host = window.location.host; // Use host (includes port) instead of hostname
+    // Use nginx proxy for WebSocket connection
+    const wsUrl = `${protocol}//${host}/ws/chat/${roomName}/`;
 
     console.log("Connecting to WebSocket:", wsUrl);
     console.log("Current location:", window.location.href);
