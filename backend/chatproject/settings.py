@@ -149,7 +149,7 @@ CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://65.2.37.155:8000$",  # Add backend URL pattern
 ]
 
-# Additional CORS headers for WebSocket
+# Additional CORS headers for WebSocket and 
 CORS_ALLOWED_HEADERS = [
     'accept',
     'accept-encoding',
