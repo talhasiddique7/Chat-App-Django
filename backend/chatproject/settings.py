@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-q0)72+hgasuk5pwazdxj5!8!q_1un$vtg$j00ibyx4+tuoos)z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '65.2.37.155']
 
 
 # Application definition
@@ -139,12 +139,14 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://65.2.37.155:3000",
+    "http://65.2.37.155:8000",  # Add backend URL as well
 ]
 
 # WebSocket CORS settings
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:3000$",
     r"^http://65.2.37.155:3000$",
+    r"^http://65.2.37.155:8000$",  # Add backend URL pattern
 ]
 
 # Additional CORS headers for WebSocket
